@@ -9,7 +9,7 @@ computer = t[randint(0,2)]
 #set player to false
 player = False
 
-while player == False:
+while not player:
 # set player to true
     player = input(t)
     if player == computer:
@@ -32,7 +32,7 @@ while player == False:
     else:                      
         print("That's not a valid play. Check your spelling!")
 
-    
+
     #player was set to True, but we want it to be False so the loop continues
     player = False
     computer = t[randint(0,2)]       
